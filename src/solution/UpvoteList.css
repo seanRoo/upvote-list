@@ -1,0 +1,42 @@
+.upvoteButton {
+  height: 70%;
+  width: 125px;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  background-color: #f4f6f8;
+  border: none;
+  flex: 0 0 auto;
+
+  &:hover {
+    animation: pulse 0.4s ease-out;
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+
+  &:last-of-type {
+    margin-right: 10px;
+  }
+}
+
+.selected {
+  background-color: #e5e8fd;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,40 @@
+.upvoteListContainer {
+  height: 200px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  .upvoteList {
+    height: 80%;
+    flex: 0.85;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 14px;
+    border: 1px solid grey;
+    overflow-x: auto;
+
+    &:first-child {
+      padding-left: 20px;
+    }
+    &:last-child {
+      padding-right: 20px;
+    }
+  }
+
+  .addListItemButton {
+    height: 45%;
+    width: 110px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    background-color: #f4f6f8;
+  }
+}
